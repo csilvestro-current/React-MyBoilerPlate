@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './SignUp.css'
+//import './SignUp.css'
 //React Router
 import { NavLink } from 'react-router-dom'
 
