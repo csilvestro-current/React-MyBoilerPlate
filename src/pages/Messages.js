@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import NavDynamic from '../components/NavDynamic';
 
 
 class Messages extends Component {
   render() {
     return (
       <section className="">
-        Messages
+        Messages<NavDynamic />
       </section>
     );
   }
