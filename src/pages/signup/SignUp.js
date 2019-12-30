@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './Landing.css'
+import './SignUp.css'
 //React Router
 import { NavLink } from 'react-router-dom'
 
-class Landing extends Component {
+class SignUp extends Component {
     state = {
         email: '',
         password: '',
@@ -27,14 +27,12 @@ class Landing extends Component {
                 <form 
                     onSubmit={this.handleSubmit} 
                     style={styles.formcontainer}>
-                    <h1>Sign in to Instabook</h1>
+                    <h1>Sign up to Instabook</h1>
                     <div className="form-group">
                         <label>
                             Email: 
                             <input type="email" value={this.state.value} onChange={this.handleChange} />
                         </label>
-                    </div>
-                    <div className="form-group">
                         <label>
                             Password: 
                             <input 
@@ -45,17 +43,33 @@ class Landing extends Component {
                     </div>
                     <div className="form-group">
                         <label>
-                            <input
-                                name="rememberEmail"
-                                type="checkbox"
-                                checked={this.state.rememberEmail}
-                                onChange={this.changeInput} /> 
-                                Remember email
+                            Email: 
+                            <input type="email" value={this.state.value} onChange={this.handleChange} />
+                        </label>
+                        <label>
+                            Password: 
+                            <input 
+                                type="password" 
+                                value={this.state.value} onChange={this.handleChange}
+                            />
                         </label>
                     </div>
+                    <div className="form-group">
+                        <label>
+                            Email: 
+                            <input type="email" value={this.state.value} onChange={this.handleChange} />
+                        </label>
+                        <label>
+                            Password: 
+                            <input 
+                                type="password" 
+                                value={this.state.value} onChange={this.handleChange}
+                            />
+                        </label>
+                    </div>
+                    
                     <div>
-                        <NavLink to="/Newsfeed"> <button type="submit" value="Submit">Sign In</button></NavLink>
-                        
+                        <NavLink to="/"> <button type="submit" value="Submit">Sign In</button></NavLink>
                         <NavLink to="/SignUp">  <button type="submit" value="Submit">Sign Up</button></NavLink>
                     </div>
                 </form>
@@ -64,7 +78,7 @@ class Landing extends Component {
     }
 }
 
-export default Landing;
+export default SignUp;
 
 const styles = {
     container: {

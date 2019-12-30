@@ -6,8 +6,7 @@ import Newsfeed from '../pages/Newsfeed'
 import Messages from '../pages/Messages'
 import Watch from '../pages/Watch'
 import Profile from '../pages/Profile'
-
-
+import SignUp from '../pages/signup/SignUp'
 
 class Routes extends Component {
   render() {
@@ -15,6 +14,7 @@ class Routes extends Component {
       <section className="content main-content">
         <Switch>
           <Route exact path='/' component={Landing} />
+          <Route exact path='/SignUp' component={SignUp} />
           <Route exact path='/Newsfeed' component={Newsfeed} />
           <Route exact path='/Messages' component={Messages} />
           <Route exact path='/Watch' component={Watch} />
