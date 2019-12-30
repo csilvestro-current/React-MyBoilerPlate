@@ -1,24 +1,32 @@
 import React, { Component } from 'react'
 import './App.css'
 import Routes from './components/Routes'
-// import Footer from './components/Footer'
-import Nav from './components/Nav';
 
 //React Router
-import { BrowserRouter as Router} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 
 class App extends Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <div className="container">
-          <Nav />
+        {/* Or */}
+        {/* <div style={styles.container}> */}
           <Routes />
         </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
 
 export default App
+
+// const styles = {
+//   container: {
+//       backgroundColor: 'gray',
+//       display: 'flex',
+//       flexDirection: 'row',
+//       height: '100vh'
+//   }
+// }

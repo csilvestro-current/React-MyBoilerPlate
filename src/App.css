@@ -25,118 +25,23 @@
 /* ------------------------------ */
 /* Default Values */
 /* ------------------------------ */
-
 * {
   margin: 0;
-}
+} 
+
 html, body {
-  height: 100%;
-}
-body {
-  width: 100%;
-  background-color: rgb(4,101,191);
-  /*font-family: 'El Messiri', sans-serif;*/
-  /*font-family: 'Quicksand', sans-serif;*/
-  display: flex;
-  flex-direction: column;
-}
-header, footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-.content {
-  display: flex;
-  flex-flow: row wrap;
-}
-.content-item {
-  margin: 5%;
-  width: 90%;
-  display: -webkit-flex;
-  justify-content: center;
+  font-family: 'Raleway', sans-serif;
 }
 
-h1{
-  color: rgb(163,173,194);
-  padding-left: 4%;
-  padding-top: 4%;
-  font-family: 'El Messiri', sans-serif;
-  /*background-color: rgba(71,76,85,1);*/
-  width:100%;
-  font-size: 2em;
-}
-hr {
-  width: 85%;
-  padding-left: 5%;
-}
-a:link {
-    color: rgb(143,153,171);
-}
-a:visited {
-    color: rgb(143,153,171);
-}
-a:hover {
-    color: rgb(6,135,255);
-}
-a:active {
-    color: rgb(5,122,229);
-}
-
-
-/* ------------------------------ */
-/*Header*/
-/* ------------------------------ */
-
-.header {
-  background-color: rgb(39,42,47);
-  color: rgb(163,173,194);
-  height: 40px;
-  padding-top: 4%;
-  font-size: 1em;
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* ------------------------------ */
-/*Footer*/
+/* Container */
 /* ------------------------------ */
-
-.footer {
-  background-color: rgb(39,42,47);
-  color: rgb(163,173,194);
-  height: 40px;
-  padding-top: 4%;
-  font-size: 1.25em;
-  /*position:fixed;*/
-  width: 100%;
-}
-
-/* ------------------------------ */
-/* Home */
-/* ------------------------------ */
-
-.main-content {
-  background-color: dark blue;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-
-
-.hmBkgd{
-  background-color: rgba(4,101,191,0.3);
-  height: 300px;
-}
-
-.lrgCont{
-  padding: 3%;
-}
-
-.smllCont{
-  background-color: rgba(71,76,85,0.8);
-  width: 90%;
-  margin: 5% auto;
-  -webkit-border-radius: 5%;
-  -moz-border-radius: 5%;
-  border-radius: 5%;
+.container {
+  background-color: gray;
+  height: 100vh;
 }
