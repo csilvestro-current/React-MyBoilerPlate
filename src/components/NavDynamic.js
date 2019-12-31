@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 //React Router
 import { NavLink } from 'react-router-dom'
-import Button from '@material-ui/core/Button';
+//import Button from '@material-ui/core/Button';
 
 class NavDynamic extends Component {
   render() {
@@ -11,7 +11,7 @@ class NavDynamic extends Component {
         <NavLink to="/Messages">Messages</NavLink>
         <NavLink to="/Watch">Watch</NavLink>
         <NavLink to="/Profile">Profile</NavLink>
-        <Button variant="contained">Default</Button>
+        {/* <Button variant="contained">Default</Button> */}
        </nav>
     );
   }

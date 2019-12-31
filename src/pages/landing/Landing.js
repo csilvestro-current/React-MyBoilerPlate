@@ -28,13 +28,13 @@ class Landing extends Component {
                     onSubmit={this.handleSubmit} 
                     style={styles.formcontainer}>
                     <h1>Sign in to Instabook</h1>
-                    <div className="form-group">
+                    <div className="form-row">
                         <label>
                             Email: 
                             <input type="email" value={this.state.value} onChange={this.handleChange} />
                         </label>
                     </div>
-                    <div className="form-group">
+                    <div className="form-row">
                         <label>
                             Password: 
                             <input 
@@ -43,7 +43,7 @@ class Landing extends Component {
                             />
                         </label>
                     </div>
-                    <div className="form-group">
+                    <div className="form-row">
                         <label>
                             <input
                                 name="rememberEmail"
@@ -53,7 +53,7 @@ class Landing extends Component {
                                 Remember email
                         </label>
                     </div>
-                    <div>
+                    <div className="form-row">
                         <NavLink to="/Newsfeed"> <button type="submit" value="Submit">Sign In</button></NavLink>
                         
                         <NavLink to="/SignUp">  <button type="submit" value="Submit">Sign Up</button></NavLink>
@@ -79,8 +79,8 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         background: 'whitesmoke',
-        justifyContent: 'center',
-        alignItems:'center',
+        // justifyContent: 'center',
+        // alignItems:'center',
         padding: 20,
         borderRadius: 4,
         boxShadow: '5px 5px 10px'

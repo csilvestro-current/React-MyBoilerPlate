@@ -1,12 +1,20 @@
 import React, { Component } from 'react'
-import NavDynamic from '../components/NavDynamic';
-
+import IfElse from '../pages/condition/IfElse';
+import Tirenary from '../pages/condition/Tirenary';
+import Logical from '../pages/condition/Logical';
+import Nav from '../components/Nav';
 
 class Messages extends Component {
   render() {
     return (
       <section className="">
-        Messages<NavDynamic />
+        <Nav />
+        <div>
+          ...
+        </div>
+        <IfElse />
+        <Tirenary />
+        <Logical />
       </section>
     );
   }
